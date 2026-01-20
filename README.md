@@ -206,7 +206,7 @@ Este proyecto es de uso libre. Puedes usarlo, modificarlo y distribuirlo como de
 **Matías Di Girolamo**
 - LinkedIn: [/in/matiasdigirolamo](https://linkedin.com/in/matiasdigirolamo)
 - GitHub: [@matiasdigirolamo](https://github.com/matiasdigirolamo)
-- Email: contact@matiasdigirolamo.com
+- Email: matidigi23@gmail.com
 
 ---
 
