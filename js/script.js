@@ -140,11 +140,6 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
             entry.target.style.transform = 'translateY(0)';
-
-            // Animate skill bars
-            if (entry.target.classList.contains('skill-category')) {
-                animateSkillBars(entry.target);
-            }
         }
     });
 }, observerOptions);
@@ -157,19 +152,6 @@ animatedElements.forEach(el => {
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
 });
-
-// ===================================
-// SKILL BARS ANIMATION
-// ===================================
-function animateSkillBars(category) {
-    const skillBars = category.querySelectorAll('.skill-progress');
-    skillBars.forEach(bar => {
-        const progress = bar.getAttribute('data-progress');
-        setTimeout(() => {
-            bar.style.width = progress + '%';
-        }, 200);
-    });
-}
 
 // ===================================
 // SCROLL TO TOP BUTTON
@@ -195,25 +177,25 @@ scrollTopBtn.addEventListener('click', () => {
 // CONTACT FORM
 // ===================================
 const contactForm = document.getElementById('contactForm');
+const contactEmail = 'matidigi23@gmail.com';
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // Get form data
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        subject: document.getElementById('subject').value,
-        message: document.getElementById('message').value
-    };
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
 
-    // Here you would normally send the data to a server
-    console.log('Form submitted:', formData);
+    const mailSubject = encodeURIComponent(`[Portfolio] ${subject}`);
+    const mailBody = encodeURIComponent(
+        `Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`
+    );
 
-    // Show success message
+    window.location.href = `mailto:${contactEmail}?subject=${mailSubject}&body=${mailBody}`;
+
     alert('¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.');
 
-    // Reset form
     contactForm.reset();
 });
 
