@@ -130,7 +130,7 @@ img {
 
 section {
     position: relative;
-    padding: 120px 0;
+    padding: 70px 0;
 }
 
 .top-controls {
@@ -399,11 +399,11 @@ section {
 
 .hero-title-wrap {
     display: grid;
-    gap: 10px;
+    gap: 6px;
 }
 
 .hero-title {
-    min-height: 58px;
+    min-height: 44px;
     width: 100%;
     max-width: none;
     font-size: clamp(1.2rem, 1.7vw, 1.5rem);
@@ -592,7 +592,7 @@ section {
     display: grid;
     justify-content: center;
     gap: 10px;
-    margin-top: 44px;
+    margin-top: 15px;
     text-align: center;
     color: var(--text-faint);
 }

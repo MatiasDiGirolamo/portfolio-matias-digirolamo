@@ -44,7 +44,7 @@ translations.es = {
         greeting: 'Hola, soy',
         titleLabel: 'Desarrollador FullStack .NET',
         roles: ['Construyo software de punta a punta', 'APIs, interfaces y producto real', 'Experiencia full stack para negocio y sistemas'],
-        description: 'Desarrollo soluciones empresariales con <strong>.NET, SQL Server, ASP.NET y APIs REST</strong>, y tambien productos completos con <strong>React, Node.js, Prisma, Tailwind y Docker</strong>. Me interesa construir software con criterio visual, arquitectura solida y foco en problemas reales.',
+        description: 'Trabajo en aplicaciones empresariales con <strong>.NET</strong> y tambien desarrollo productos web completos, combinando backend, interfaz y decisiones de arquitectura segun lo que necesite cada proyecto.',
         badges: ['.NET / SQL Server', 'React / Node.js', 'ERP / SaaS / APIs'],
         buttons: ['Hablemos', 'Ver proyectos', 'Ver CV'],
         socials: ['LinkedIn', 'GitHub', 'Email'],
@@ -60,7 +60,7 @@ translations.es = {
         title: 'Software con criterio tecnico y enfoque real',
         paragraphs: [
             'Soy un <strong>desarrollador FullStack de 22 anos</strong> que disfruta unir arquitectura, producto y resolucion de problemas. Actualmente estudio en la <strong>UTN</strong> y trabajo como desarrollador en <strong>IPN ERP Cloud</strong>.',
-            'Arranque en 2021 de forma autodidacta con HTML, CSS y JavaScript. Con el tiempo me fui especializando en backend con C#, ASP.NET, SQL Server y APIs REST, y hoy tambien trabajo con interfaces y modulos empresariales sobre .NET 10.',
+            'Arranque en 2021 de forma autodidacta con HTML, CSS y JavaScript. Con el tiempo me fui especializando en backend con C#, ASP.NET, SQL Server y APIs REST, y hoy tambien trabajo con interfaces y modulos empresariales sobre .NET.',
             'En proyectos personales tambien trabajo con React, Node.js, Prisma, Tailwind CSS, Vite y Docker, lo que me permite moverme con comodidad entre experiencia de usuario, logica de negocio y despliegue.',
             'Me interesa participar en productos donde el detalle importe, las decisiones tecnicas tengan impacto y el software se construya para durar.'
         ],
@@ -97,7 +97,7 @@ translations.es = {
             {
                 title: 'Frontend',
                 items: [
-                    ['Blazor con .NET 10', 'Experiencia actual construyendo pantallas y flujos de negocio en aplicaciones empresariales.', 'Actual'],
+                    ['Blazor con .NET', 'Experiencia actual construyendo pantallas y flujos de negocio en aplicaciones empresariales.', 'Actual'],
                     ['React, Vite y Tailwind CSS', 'Interfaces modernas con routing, estado, componentes reutilizables y foco en producto.', 'Proyectos'],
                     ['JavaScript, HTML y CSS', 'Base solida para interfaces responsive, interacciones y layouts con personalidad propia.', 'Fuerte']
                 ]
@@ -130,7 +130,7 @@ translations.en = {
         greeting: 'Hello, I am',
         titleLabel: 'FullStack .NET Developer',
         roles: ['I build software end to end', 'APIs, interfaces and real products', 'Full stack experience for business and systems'],
-        description: 'I build enterprise solutions with <strong>.NET, SQL Server, ASP.NET and REST APIs</strong>, and I also ship complete products with <strong>React, Node.js, Prisma, Tailwind and Docker</strong>. I care about software with visual intent, solid architecture and real problem solving.',
+        description: 'I work on enterprise applications with <strong>.NET</strong> and also build complete web products, combining backend, interface and architecture decisions based on what each project needs.',
         badges: ['.NET / SQL Server', 'React / Node.js', 'ERP / SaaS / APIs'],
         buttons: ["Let's talk", 'View projects', 'View CV'],
         socials: ['LinkedIn', 'GitHub', 'Email'],
@@ -146,7 +146,7 @@ translations.en = {
         title: 'Software with technical judgment and real focus',
         paragraphs: [
             'I am a <strong>22-year-old Full Stack developer</strong> who enjoys connecting architecture, product and problem solving. I am currently studying at <strong>UTN</strong> and working as a developer at <strong>IPN ERP Cloud</strong>.',
-            'I started in 2021 as a self-taught developer with HTML, CSS and JavaScript. Over time I specialized in backend development with C#, ASP.NET, SQL Server and REST APIs, and today I also work on enterprise interfaces and modules on .NET 10.',
+            'I started in 2021 as a self-taught developer with HTML, CSS and JavaScript. Over time I specialized in backend development with C#, ASP.NET, SQL Server and REST APIs, and today I also work on enterprise interfaces and modules on .NET.',
             'In personal projects I also work with React, Node.js, Prisma, Tailwind CSS, Vite and Docker, which lets me move comfortably across user experience, business logic and deployment.',
             'I want to be part of products where details matter, technical decisions have impact and software is built to last.'
         ],
@@ -183,7 +183,7 @@ translations.en = {
             {
                 title: 'Frontend',
                 items: [
-                    ['Blazor with .NET 10', 'Current experience building enterprise screens and business flows.', 'Current'],
+                    ['Blazor with .NET', 'Current experience building enterprise screens and business flows.', 'Current'],
                     ['React, Vite and Tailwind CSS', 'Modern interfaces with routing, state, reusable components and product focus.', 'Projects'],
                     ['JavaScript, HTML and CSS', 'Solid base for responsive interfaces, interactions and layouts with personality.', 'Strong']
                 ]
@@ -206,7 +206,7 @@ translations.esMore = {
         title: 'Experiencia en productos y sistemas reales',
         description: 'Me interesa entender el contexto, cuidar la arquitectura y entregar software que funcione bien con usuarios, procesos y necesidades reales de negocio.',
         items: [
-            ['2025 / ACTUAL', 'May 2025 - Hoy', 'Programador FullStack', 'IPN ERP Cloud', 'Buenos Aires, Argentina / Remoto', ['Desarrollo de aplicaciones empresariales con stack completo .NET.', 'Implementacion de soluciones ERP en la nube con C# y ASP.NET.', 'Desarrollo de pantallas y modulos web sobre .NET 10.', 'Colaboracion con equipo y negocio para entregas con impacto real.']],
+            ['2025 / ACTUAL', 'May 2025 - Hoy', 'Programador FullStack', 'IPN ERP Cloud', 'Buenos Aires, Argentina / Remoto', ['Desarrollo de aplicaciones empresariales con stack completo .NET.', 'Implementacion de soluciones ERP en la nube con C# y ASP.NET.', 'Desarrollo de pantallas y modulos web con Blazor y MVC.', 'Colaboracion con equipo y negocio para entregas con impacto real.']],
             ['2024 / 2025', 'Ene 2024 - May 2025', 'Desarrollador .NET', 'PENA', 'Buenos Aires, Argentina / Presencial', ['Desarrollo y mantenimiento de aplicaciones en C# y VB.NET.', 'Creacion de APIs REST y aplicaciones web con ASP.NET.', 'Gestion y optimizacion de bases de datos SQL Server.', 'Implementacion del patron MVC en aplicaciones empresariales.', 'Optimizacion de rendimiento en sistemas criticos.']],
             ['2021 / 2023', 'Sep 2021 - Dic 2023', 'Gestor de Cobros', 'Empresa de Servicios Financieros', 'Remoto', ['Gestion de comunicacion con clientes y negociacion de pagos.', 'Registro y seguimiento de interacciones en sistemas CRM.', 'Toma de decisiones estrategicas para recuperacion de deudas.']]
         ]
@@ -252,7 +252,7 @@ translations.enMore = {
         title: 'Experience in real products and systems',
         description: 'I care about understanding the context, protecting the architecture and delivering software that works well with real users, processes and business needs.',
         items: [
-            ['2025 / CURRENT', 'May 2025 - Today', 'Full Stack Developer', 'IPN ERP Cloud', 'Buenos Aires, Argentina / Remote', ['Enterprise application development with the full .NET stack.', 'ERP cloud solutions built with C# and ASP.NET.', 'Screen and web module development on .NET 10.', 'Collaboration with team and business stakeholders for high-impact delivery.']],
+            ['2025 / CURRENT', 'May 2025 - Today', 'Full Stack Developer', 'IPN ERP Cloud', 'Buenos Aires, Argentina / Remote', ['Enterprise application development with the full .NET stack.', 'ERP cloud solutions built with C# and ASP.NET.', 'Screen and web module development with Blazor and MVC.', 'Collaboration with team and business stakeholders for high-impact delivery.']],
             ['2024 / 2025', 'Jan 2024 - May 2025', '.NET Developer', 'PENA', 'Buenos Aires, Argentina / On-site', ['Development and maintenance of applications in C# and VB.NET.', 'REST API and web application development with ASP.NET.', 'SQL Server database management and optimization.', 'MVC pattern implementation in enterprise applications.', 'Performance optimization for critical systems.']],
             ['2021 / 2023', 'Sep 2021 - Dec 2023', 'Collections Specialist', 'Financial Services Company', 'Remote', ['Client communication management and payment negotiation.', 'Interaction tracking and logging in CRM systems.', 'Strategic decision making for debt recovery.']]
         ]
