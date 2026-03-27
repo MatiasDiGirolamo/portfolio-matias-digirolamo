@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matias Di Girolamo | CV</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon-mdg.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #11100f;
+            --card: rgba(27, 23, 20, 0.92);
+            --line: rgba(243, 234, 223, 0.12);
+            --text: #f3eadf;
+            --soft: #c4b7a7;
+            --accent: #7bb2ff;
+            --ember: #f08a53;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: "Space Grotesk", sans-serif;
+            background:
+                radial-gradient(circle at top left, rgba(240, 138, 83, 0.16), transparent 30%),
+                radial-gradient(circle at 82% 18%, rgba(123, 178, 255, 0.14), transparent 24%),
+                linear-gradient(180deg, #11100f, #1a1715);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        main {
+            width: min(100% - 32px, 980px);
+            margin: 0 auto;
+            padding: 48px 0 72px;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .brand {
+            font-family: "Fira Code", monospace;
+            color: var(--soft);
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            min-height: 48px;
+            padding: 0 18px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            color: var(--text);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--ember), #ffb16b);
+            color: #11100f;
+            border-color: transparent;
+        }
+
+        .sheet {
+            padding: 32px;
+            border: 1px solid var(--line);
+            border-radius: 32px;
+            background: var(--card);
+        }
+
+        h1 {
+            font-family: "Syne", sans-serif;
+            font-size: clamp(2.6rem, 5vw, 4rem);
+            line-height: 1;
+        }
+
+        .subtitle {
+            margin-top: 12px;
+            color: var(--accent);
+            font-size: 1.1rem;
+        }
+
+        .summary {
+            margin-top: 18px;
+            color: var(--soft);
+            max-width: 62ch;
+        }
+
+        .meta {
+            margin-top: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .meta span {
+            padding: 0.55rem 0.9rem;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            color: var(--text);
+        }
+
+        .grid {
+            margin-top: 28px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            padding: 22px;
+            border-radius: 24px;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .card h2 {
+            font-family: "Syne", sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+
+        .card p,
+        .card li {
+            color: var(--soft);
+        }
+
+        ul {
+            padding-left: 18px;
+            display: grid;
+            gap: 8px;
+        }
+
+        .full {
+            grid-column: 1 / -1;
+        }
+
+        @media print {
+            body { background: white; color: black; }
+            .topbar { display: none; }
+            .sheet, .card { border-color: #d0d0d0; background: white; }
+            .meta span { border-color: #d0d0d0; }
+        }
+
+        @media (max-width: 720px) {
+            .grid { grid-template-columns: 1fr; }
+            .sheet { padding: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="topbar">
+            <div class="brand">&lt; MDG /&gt; CV</div>
+            <div class="actions">
+                <a href="index.html" class="btn">Volver al portfolio</a>
+                <button class="btn btn-primary" onclick="window.print()">Guardar como PDF</button>
+            </div>
+        </div>
+
+        <section class="sheet">
+            <h1>Matias Di Girolamo</h1>
+            <p class="subtitle">Full Stack Developer | .NET, C#, SQL Server, ASP.NET, Blazor</p>
+            <p class="summary">
+                Desarrollador orientado a sistemas, APIs y software empresarial. Trabajo actualmente en IPN ERP Cloud
+                construyendo soluciones con .NET, SQL Server y Blazor, y tambien desarrollo productos completos con
+                React, Node.js, Prisma, Tailwind y Docker.
+            </p>
+
+            <div class="meta">
+                <span>Buenos Aires, Argentina</span>
+                <span>matidigi23@gmail.com</span>
+                <span>github.com/MatiasDiGirolamo</span>
+                <span>linkedin.com/in/matiasdigirolamo</span>
+            </div>
+
+            <div class="grid">
+                <article class="card">
+                    <h2>Experiencia</h2>
+                    <ul>
+                        <li>Programador FullStack en IPN ERP Cloud desde mayo 2025.</li>
+                        <li>Desarrollador .NET en PENA entre 2024 y 2025.</li>
+                        <li>Trabajo con C#, ASP.NET, SQL Server, Blazor y APIs REST.</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h2>Stack principal</h2>
+                    <ul>
+                        <li>.NET / C# / ASP.NET</li>
+                        <li>SQL Server / EF Core / OpenAPI</li>
+                        <li>Blazor / JavaScript / HTML / CSS</li>
+                        <li>React / Node.js / Prisma / Docker</li>
+                    </ul>
+                </article>
+
+                <article class="card full">
+                    <h2>Proyectos destacados</h2>
+                    <ul>
+                        <li>ERP Hospital: plataforma SaaS multiempresa para gestion clinica.</li>
+                        <li>StockMaster API: backend .NET con EF Core, SQL Server y Swagger.</li>
+                        <li>StockMaster Pro: sistema CRUD para gestion de inventario.</li>
+                        <li>Finance Tracker: PWA con Firebase para finanzas personales.</li>
+                        <li>LoL Build Advisor: MVP full stack con Riot API.</li>
+                    </ul>
+                </article>
+
+                <article class="card full">
+                    <h2>Formacion</h2>
+                    <p>Tecnicatura en Programacion - UTN</p>
+                    <p>Inicio autodidacta en 2021 con foco posterior en backend y software empresarial.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

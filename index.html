@@ -3,37 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Matías Di Girolamo - FullStack Developer especializado en .NET y tecnologías web modernas">
-    <title>Matías Di Girolamo | FullStack Developer</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="description" content="Matias Di Girolamo - Full Stack Developer especializado en .NET, SQL Server y productos web modernos.">
+    <title>Matias Di Girolamo | Full Stack Developer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon-mdg.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Theme Toggle -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <i class="fas fa-moon"></i>
-    </button>
-
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">
+            <a href="#home" class="logo">
                 <span class="logo-bracket">&lt;</span>
-                MD
+                MDG
                 <span class="logo-bracket">/&gt;</span>
             </a>
+
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link active">Inicio</a></li>
-                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
-                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#about" class="nav-link">Sobre mi</a></li>
+                <li><a href="#skills" class="nav-link">Stack</a></li>
                 <li><a href="#experience" class="nav-link">Experiencia</a></li>
                 <li><a href="#projects" class="nav-link">Proyectos</a></li>
                 <li><a href="#contact" class="nav-link">Contacto</a></li>
             </ul>
-            <button class="hamburger" id="hamburger">
+
+            <div class="top-controls">
+                <button class="language-toggle" id="languageToggle" aria-label="Cambiar idioma" data-language="es">
+                    <span class="language-label">Idioma</span>
+                    <span class="language-current" aria-hidden="true">
+                        <span class="language-option" data-lang-option="es">ES</span>
+                        <span class="language-separator">/</span>
+                        <span class="language-option" data-lang-option="en">ENG</span>
+                    </span>
+                </button>
+
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -41,164 +54,180 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-text">
+                <div class="hero-text reveal">
+                    <p class="hero-kicker">BUENOS AIRES / .NET / FULL STACK</p>
                     <p class="hero-greeting">Hola, soy</p>
-                    <h1 class="hero-name">Matías Di Girolamo</h1>
-                    <h2 class="hero-title">
-                        <span class="typing-text"></span>
-                        <span class="cursor">|</span>
-                    </h2>
+                    <h1 class="hero-name">Matias Di Girolamo</h1>
+
+                    <div class="hero-title-wrap">
+                        <span class="hero-title-label">Desarrollador FullStack .NET</span>
+                        <h2 class="hero-title">
+                            <span class="typing-text"></span>
+                            <span class="cursor">|</span>
+                        </h2>
+                    </div>
+
                     <p class="hero-description">
-                        Desarrollador FullStack especializado en <strong>.NET</strong>, creando aplicaciones
-                        web robustas y escalables. Apasionado por resolver problemas complejos con código limpio.
+                        Desarrollo soluciones empresariales con <strong>.NET, SQL Server, ASP.NET y APIs REST</strong>,
+                        y tambien productos completos con <strong>React, Node.js, Prisma, Tailwind y Docker</strong>.
+                        Me interesa construir software con criterio visual, arquitectura solida y foco en problemas reales.
                     </p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
-                            Contáctame
-                        </a>
-                        <a href="#projects" class="btn btn-secondary">
-                            <i class="fas fa-folder-open"></i>
-                            Ver Proyectos
-                        </a>
+
+                    <div class="hero-badges">
+                        <span>.NET / SQL Server</span>
+                        <span>React / Node.js</span>
+                        <span>ERP / SaaS / APIs</span>
                     </div>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/matiasdigirolamo" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/matiasdigirolamo" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:matidigi23@gmail.com" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-wrapper">
-                        <div class="floating-card card-1">
-                            <i class="fab fa-microsoft"></i>
-                            <span>.NET Core</span>
+
+                    <div class="hero-cta-row">
+                        <div class="hero-action-stack">
+                            <div class="hero-buttons">
+                                <a href="#contact" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Hablemos
+                                </a>
+                            <a href="#projects" class="btn btn-secondary">
+                                <i class="fas fa-arrow-right"></i>
+                                Ver proyectos
+                            </a>
+                            <a href="cv.html" class="btn btn-secondary" target="_blank" rel="noreferrer">
+                                <i class="fas fa-file-lines"></i>
+                                Ver CV
+                            </a>
                         </div>
-                        <div class="floating-card card-2" style="z-index: 15;">
-                            <i class="fas fa-database"></i>
-                            <span>SQL Server</span>
+
+                            <div class="social-links">
+                                <a href="https://linkedin.com/in/matiasdigirolamo" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                                    <span>LinkedIn</span>
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/MatiasDiGirolamo" target="_blank" rel="noreferrer" aria-label="GitHub">
+                                    <span>GitHub</span>
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="mailto:matidigi23@gmail.com" aria-label="Email">
+                                    <span>Email</span>
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
                         </div>
-                        <div class="floating-card card-3">
-                            <i class="fab fa-js"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="code-decoration">
-                            <pre><code>const developer = {
-  name: "Matías",
-  role: "FullStack Dev",
-  code: [".NET", "C#", "SQL"],
-  challenge: "Accepted ✓"
-};</code></pre>
+
+                        <div class="hero-code-float reveal">
+                            <div class="orbit-code">
+                                <span class="code-line">public class DeveloperProfile</span>
+                                <span class="code-line">{ public string Stack =&gt; "C# / .NET / SQL"; }</span>
+                                <span class="code-line">// BuildReliableSoftware();</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="scroll-indicator">
                 <div class="mouse">
                     <div class="wheel"></div>
                 </div>
-                <p>Desliza hacia abajo</p>
+                <p>Scroll para ver mas</p>
             </div>
         </div>
-        <div class="hero-bg">
-            <div class="grid-bg"></div>
+
+        <div class="hero-bg" aria-hidden="true">
+            <div class="hero-noise"></div>
+            <div class="hero-mesh hero-mesh-1"></div>
+            <div class="hero-mesh hero-mesh-2"></div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Conóceme</span>
-                <h2 class="section-title">Sobre Mí</h2>
+                <span class="section-label">Perfil</span>
+                <h2 class="section-title">Software con criterio tecnico y enfoque real</h2>
             </div>
+
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-text reveal">
                     <p class="about-intro">
-                        Soy un <strong>desarrollador FullStack de 22 años</strong> apasionado por crear soluciones
-                        tecnológicas innovadoras. Actualmente estudiante de <strong>Tecnicatura en Programación
-                        en la UTN</strong> y trabajando como desarrollador en <strong>IPN ERP Cloud</strong>.
+                        Soy un <strong>desarrollador FullStack de 22 anos</strong> que disfruta unir arquitectura,
+                        producto y resolucion de problemas. Actualmente estudio en la <strong>UTN</strong>
+                        y trabajo como desarrollador en <strong>IPN ERP Cloud</strong>.
                     </p>
                     <p>
-                        Mi trayectoria comenzó en 2021 de forma autodidacta con HTML, CSS y JavaScript.
-                        Desde entonces, he evolucionado hacia el desarrollo BackEnd con .NET, especializándome
-                        en C#, ASP.NET, SQL Server y la creación de APIs REST robustas. En mi trabajo actual
-                        también desarrollo interfaces y módulos de negocio con Blazor sobre .NET 10.
+                        Arranque en 2021 de forma autodidacta con HTML, CSS y JavaScript. Con el tiempo me fui
+                        especializando en backend con C#, ASP.NET, SQL Server y APIs REST, y hoy tambien trabajo con
+                        interfaces y modulos empresariales sobre .NET 10.
                     </p>
                     <p>
-                        En proyectos personales y productos más completos también trabajé con
-                        <strong>React, Node.js, Express, Prisma, Tailwind CSS, Vite y Docker</strong>,
-                        construyendo soluciones full stack con enfoque en producto, arquitectura y deploy.
+                        En proyectos personales tambien trabajo con React, Node.js, Prisma, Tailwind CSS, Vite y Docker,
+                        lo que me permite moverme con comodidad entre experiencia de usuario, logica de negocio y despliegue.
                     </p>
                     <p>
-                        Me caracterizo por ser <strong>detallista, autodidacta y creativo</strong>, siempre
-                        buscando nuevos desafíos que me permitan crecer profesionalmente. Mi objetivo es
-                        contribuir con soluciones innovadoras en equipos dinámicos.
+                        Me interesa participar en productos donde el detalle importe, las decisiones tecnicas tengan impacto
+                        y el software se construya para durar.
                     </p>
+
                     <div class="about-stats">
                         <div class="stat-item">
                             <span class="stat-number">4+</span>
-                            <span class="stat-label">Años Programando</span>
+                            <span class="stat-label">Anos programando</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">2+</span>
-                            <span class="stat-label">Años Profesional</span>
+                            <span class="stat-label">Anos profesional</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">10+</span>
-                            <span class="stat-label">Tecnologías</span>
+                            <span class="stat-label">Tecnologias clave</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-timeline">
+
+                <div class="about-timeline reveal">
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="timeline-year">2021</span>
-                            <h4>Inicio en Programación</h4>
-                            <p>Aprendizaje autodidacta de HTML, CSS y JavaScript</p>
+                            <h4>Inicio autodidacta</h4>
+                            <p>HTML, CSS y JavaScript como base para entrar al desarrollo web.</p>
                         </div>
                     </div>
+
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="timeline-year">2022</span>
-                            <h4>Estudios en UTN</h4>
-                            <p>Python, Git y gestión de bases de datos SQLite</p>
+                            <h4>UTN y fundamentos</h4>
+                            <p>Python, Git y bases de datos como parte de la formacion tecnica.</p>
                         </div>
                     </div>
+
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="timeline-year">2023</span>
-                            <h4>Especialización .NET</h4>
-                            <p>C#, .NET Core, SQL Server y desarrollo de APIs</p>
+                            <h4>Especializacion .NET</h4>
+                            <p>C#, .NET, SQL Server y desarrollo de APIs como foco principal.</p>
                         </div>
                     </div>
+
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="timeline-year">2024</span>
-                            <h4>Desarrollador Profesional</h4>
-                            <p>Trabajo full-time con ASP.NET, VB.NET y SQL Server</p>
+                            <h4>Trabajo profesional</h4>
+                            <p>ASP.NET, VB.NET, SQL Server y mantenimiento de sistemas en produccion.</p>
                         </div>
                     </div>
+
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="timeline-year">2025</span>
-                            <h4>FullStack en IPN ERP Cloud</h4>
-                            <p>Desarrollo de soluciones empresariales completas</p>
+                            <h4>FullStack en ERP Cloud</h4>
+                            <p>Soluciones empresariales completas con .NET, interfaces web y workflows de negocio.</p>
                         </div>
                     </div>
                 </div>
@@ -206,15 +235,19 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section class="skills" id="skills">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Mi Stack</span>
-                <h2 class="section-title">Habilidades Técnicas</h2>
+                <span class="section-label">Stack</span>
+                <h2 class="section-title">Tecnologias que uso para construir producto y sistemas</h2>
+                <p class="section-description">
+                    Separo claramente lo que uso en trabajo real, lo que domino para entregar valor
+                    y el stack que aparece en proyectos con nivel empresa.
+                </p>
             </div>
+
             <div class="skills-grid">
-                <div class="skill-category">
+                <div class="skill-category reveal">
                     <div class="category-header">
                         <i class="fas fa-code"></i>
                         <h3>Backend</h3>
@@ -223,28 +256,21 @@
                         <div class="skill-item">
                             <div class="skill-copy">
                                 <span class="skill-name">C# y .NET</span>
-                                <p>Base de mi trabajo diario para lógica de negocio, APIs y mantenimiento de sistemas empresariales.</p>
+                                <p>Base de mi trabajo diario para logica de negocio, APIs y mantenimiento de sistemas empresariales.</p>
                             </div>
                             <span class="skill-badge">Trabajo diario</span>
                         </div>
                         <div class="skill-item">
                             <div class="skill-copy">
                                 <span class="skill-name">ASP.NET y APIs REST</span>
-                                <p>Experiencia construyendo servicios web, endpoints y soluciones backend mantenibles.</p>
+                                <p>Servicios web, endpoints, documentacion y soluciones backend pensadas para durar.</p>
                             </div>
-                            <span class="skill-badge">Producción</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-copy">
-                                <span class="skill-name">VB.NET</span>
-                                <p>Mantenimiento y evolución de aplicaciones existentes en entornos corporativos.</p>
-                            </div>
-                            <span class="skill-badge">Legacy</span>
+                            <span class="skill-badge">Produccion</span>
                         </div>
                         <div class="skill-item">
                             <div class="skill-copy">
                                 <span class="skill-name">Node.js, Express y Prisma</span>
-                                <p>Stack backend usado en proyectos SaaS con API, validaciones, seguridad y acceso a datos.</p>
+                                <p>Stack usado en productos SaaS y side projects con autenticacion, datos y reglas de negocio.</p>
                             </div>
                             <span class="skill-badge">Full stack</span>
                         </div>
@@ -254,45 +280,53 @@
                         <span class="skill-tag">.NET</span>
                         <span class="skill-tag">ASP.NET</span>
                         <span class="skill-tag">VB.NET</span>
-                        <span class="skill-tag">APIs REST</span>
-                        <span class="skill-tag">MVC</span>
                         <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">Express</span>
                         <span class="skill-tag">Prisma ORM</span>
+                        <span class="skill-tag">OpenAPI</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category reveal">
                     <div class="category-header">
                         <i class="fas fa-database"></i>
-                        <h3>Bases de Datos</h3>
+                        <h3>Datos</h3>
                     </div>
                     <div class="skills-list">
                         <div class="skill-item">
                             <div class="skill-copy">
                                 <span class="skill-name">SQL Server</span>
-                                <p>Consultas, procedimientos, optimización y soporte de datos para sistemas críticos.</p>
+                                <p>Consultas, procedimientos, optimizacion y soporte de datos para sistemas criticos.</p>
                             </div>
                             <span class="skill-badge">Profesional</span>
                         </div>
                         <div class="skill-item">
                             <div class="skill-copy">
-                                <span class="skill-name">SQLite</span>
-                                <p>Uso académico y en proyectos para modelado simple y persistencia liviana.</p>
+                                <span class="skill-name">Entity Framework Core</span>
+                                <p>Modelado, acceso a datos y APIs con persistencia clara para productos en .NET.</p>
+                            </div>
+                            <span class="skill-badge">Fuerte</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-copy">
+                                <span class="skill-name">Prisma y SQLite</span>
+                                <p>Persistencia moderna y rapida para MVPs y productos con stack JavaScript.</p>
                             </div>
                             <span class="skill-badge">Proyectos</span>
                         </div>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">EF Core</span>
+                        <span class="skill-tag">Prisma</span>
                         <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">Swagger</span>
                         <span class="skill-tag">Consultas</span>
-                        <span class="skill-tag">Optimización</span>
                         <span class="skill-tag">Modelado</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category reveal">
                     <div class="category-header">
                         <i class="fas fa-laptop-code"></i>
                         <h3>Frontend</h3>
@@ -307,17 +341,17 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-copy">
-                                <span class="skill-name">JavaScript, HTML y CSS</span>
-                                <p>Base sólida para interfaces responsive, interacciones y proyectos web propios.</p>
+                                <span class="skill-name">React, Vite y Tailwind CSS</span>
+                                <p>Interfaces modernas con routing, estado, componentes reutilizables y foco en producto.</p>
                             </div>
-                            <span class="skill-badge">Fuerte</span>
+                            <span class="skill-badge">Proyectos</span>
                         </div>
                         <div class="skill-item">
                             <div class="skill-copy">
-                                <span class="skill-name">React, Vite y Tailwind CSS</span>
-                                <p>Interfaces modernas con routing, estado global y desarrollo rápido para productos completos.</p>
+                                <span class="skill-name">JavaScript, HTML y CSS</span>
+                                <p>Base solida para interfaces responsive, interacciones y layouts con personalidad propia.</p>
                             </div>
-                            <span class="skill-badge">Proyectos</span>
+                            <span class="skill-badge">Fuerte</span>
                         </div>
                     </div>
                     <div class="skill-tags">
@@ -326,116 +360,84 @@
                         <span class="skill-tag">React</span>
                         <span class="skill-tag">Vite</span>
                         <span class="skill-tag">Tailwind CSS</span>
-                        <span class="skill-tag">React Router</span>
-                        <span class="skill-tag">Zustand</span>
                         <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">HTML5</span>
                         <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">Responsive Design</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category reveal">
                     <div class="category-header">
-                        <i class="fas fa-tools"></i>
-                        <h3>Herramientas</h3>
+                        <i class="fas fa-cubes"></i>
+                        <h3>Entrega</h3>
                     </div>
                     <div class="skills-list">
                         <div class="skill-item">
                             <div class="skill-copy">
-                                <span class="skill-name">Git</span>
-                                <p>Control de versiones, trabajo por ramas y seguimiento continuo de cambios.</p>
+                                <span class="skill-name">Git y trabajo colaborativo</span>
+                                <p>Versionado, ramas, iteracion rapida y mantenimiento continuo en proyectos reales.</p>
                             </div>
-                            <span class="skill-badge">Workflow</span>
+                            <span class="skill-badge">Siempre</span>
                         </div>
                         <div class="skill-item">
                             <div class="skill-copy">
-                                <span class="skill-name">Arquitectura y mantenimiento</span>
-                                <p>Integración de APIs, patrones MVC y resolución de problemas en sistemas en producción.</p>
+                                <span class="skill-name">Docker y despliegue</span>
+                                <p>Entornos consistentes y productos listos para compartirse o desplegarse con menos friccion.</p>
                             </div>
-                            <span class="skill-badge">En uso</span>
+                            <span class="skill-badge">Deploy</span>
                         </div>
                         <div class="skill-item">
                             <div class="skill-copy">
-                                <span class="skill-name">Docker, Swagger y despliegue</span>
-                                <p>Experiencia documentando APIs y desplegando proyectos full stack con contenedores e infraestructura web.</p>
+                                <span class="skill-name">Arquitectura de producto</span>
+                                <p>Pienso features, UX, estructura de datos y recorrido del usuario como un mismo sistema.</p>
                             </div>
-                            <span class="skill-badge">Profesional</span>
+                            <span class="skill-badge">Enfoque</span>
                         </div>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag">Git</span>
-                        <span class="skill-tag">MVC</span>
-                        <span class="skill-tag">Debugging</span>
-                        <span class="skill-tag">APIs REST</span>
                         <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Swagger</span>
-                        <span class="skill-tag">OpenAPI</span>
-                        <span class="skill-tag">Caddy</span>
-                        <span class="skill-tag">Trabajo en equipo</span>
+                        <span class="skill-tag">SaaS</span>
+                        <span class="skill-tag">ERP</span>
+                        <span class="skill-tag">Responsive</span>
+                        <span class="skill-tag">UI Systems</span>
                     </div>
                 </div>
             </div>
 
-            <div class="tech-icons">
-                <div class="tech-icon" data-tooltip="C#">
-                    <i class="devicon-csharp-plain"></i>
-                </div>
-                <div class="tech-icon" data-tooltip=".NET">
-                    <i class="devicon-dotnetcore-plain"></i>
-                </div>
-                <div class="tech-icon" data-tooltip="Blazor">
-                    <i class="fab fa-microsoft"></i>
-                </div>
-                <div class="tech-icon" data-tooltip="React">
-                    <i class="devicon-react-original"></i>
-                </div>
-                <div class="tech-icon" data-tooltip="Node.js">
-                    <i class="devicon-nodejs-plain"></i>
-                </div>
-                <div class="tech-icon" data-tooltip="Express">
-                    <i class="devicon-express-original"></i>
-                </div>
-                <div class="tech-icon" data-tooltip="Prisma ORM">
-                    <i class="devicon-prisma-original"></i>
-                </div>
-                <div class="tech-icon" data-tooltip="Tailwind CSS">
-                    <i class="devicon-tailwindcss-original"></i>
-                </div>
-                <div class="tech-icon" data-tooltip="Vite">
-                    <i class="devicon-vitejs-plain"></i>
-                </div>
-                <div class="tech-icon" data-tooltip="SQL Server">
-                    <i class="fas fa-database"></i>
-                </div>
-                <div class="tech-icon" data-tooltip="Entity Framework Core">
-                    <i class="fas fa-layer-group"></i>
-                </div>
-                <div class="tech-icon" data-tooltip="Docker">
-                    <i class="devicon-docker-plain"></i>
-                </div>
-                <div class="tech-icon" data-tooltip="JavaScript">
-                    <i class="devicon-javascript-plain"></i>
-                </div>
-                <div class="tech-icon" data-tooltip="Git">
-                    <i class="devicon-git-plain"></i>
-                </div>
+            <div class="tech-icons reveal mobile-carousel" data-mobile-carousel="tech">
+                <div class="tech-icon" data-tooltip=".NET"><i class="devicon-dotnetcore-plain colored"></i></div>
+                <div class="tech-icon" data-tooltip="C#"><i class="devicon-csharp-plain colored"></i></div>
+                <div class="tech-icon" data-tooltip="Blazor"><i class="devicon-blazor-original colored"></i></div>
+                <div class="tech-icon" data-tooltip="SQL Server"><i class="devicon-microsoftsqlserver-plain colored"></i></div>
+                <div class="tech-icon" data-tooltip="React"><i class="devicon-react-original colored"></i></div>
+                <div class="tech-icon" data-tooltip="Node.js"><i class="devicon-nodejs-plain colored"></i></div>
+                <div class="tech-icon" data-tooltip="Express"><i class="devicon-express-original"></i></div>
+                <div class="tech-icon" data-tooltip="Prisma"><i class="devicon-prisma-original colored"></i></div>
+                <div class="tech-icon" data-tooltip="Tailwind"><i class="devicon-tailwindcss-original colored"></i></div>
+                <div class="tech-icon" data-tooltip="Docker"><i class="devicon-docker-plain colored"></i></div>
+                <div class="tech-icon" data-tooltip="Git"><i class="devicon-git-plain colored"></i></div>
+                <div class="tech-icon" data-tooltip="Vite"><i class="devicon-vitejs-plain colored"></i></div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section class="experience" id="experience">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Mi Trayectoria</span>
-                <h2 class="section-title">Experiencia Profesional</h2>
+                <span class="section-label">Trayectoria</span>
+                <h2 class="section-title">Experiencia en productos y sistemas reales</h2>
+                <p class="section-description">
+                    Me interesa entender el contexto, cuidar la arquitectura
+                    y entregar software que funcione bien con usuarios, procesos y necesidades reales de negocio.
+                </p>
             </div>
+
             <div class="experience-timeline">
-                <div class="experience-item">
+                <div class="experience-item reveal">
                     <div class="experience-date">
-                        <span class="date-badge">Actual</span>
-                        <span class="date-text">Abr 2025 - Presente</span>
+                        <span class="date-badge">2025 / ACTUAL</span>
+                        <span class="date-text">May 2025 - Hoy</span>
                     </div>
                     <div class="experience-content">
                         <div class="company-logo">
@@ -443,26 +445,26 @@
                         </div>
                         <h3>Programador FullStack</h3>
                         <h4>IPN ERP Cloud</h4>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina (Remoto)</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina / Remoto</p>
                         <ul class="experience-list">
-                            <li>Desarrollo de aplicaciones empresariales con stack completo .NET</li>
-                            <li>Implementación de soluciones ERP en la nube con C# y ASP.NET</li>
-                            <li>Desarrollo de pantallas y módulos con Blazor sobre .NET 10 en mi trabajo actual</li>
-                            <li>Colaboración en equipos ágiles para entregas de valor</li>
+                            <li>Desarrollo de aplicaciones empresariales con stack completo .NET.</li>
+                            <li>Implementacion de soluciones ERP en la nube con C# y ASP.NET.</li>
+                            <li>Desarrollo de pantallas y modulos web sobre .NET 10.</li>
+                            <li>Colaboracion con equipo y negocio para entregas con impacto real.</li>
                         </ul>
                         <div class="tech-tags">
                             <span class="tag">C#</span>
                             <span class="tag">ASP.NET</span>
-                            <span class="tag">.NET Core</span>
+                            <span class="tag">SQL Server</span>
                             <span class="tag">Blazor</span>
                             <span class="tag">.NET 10</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="experience-item">
+                <div class="experience-item reveal">
                     <div class="experience-date">
-                        <span class="date-badge">2024-2025</span>
+                        <span class="date-badge">2024 / 2025</span>
                         <span class="date-text">Ene 2024 - May 2025</span>
                     </div>
                     <div class="experience-content">
@@ -471,13 +473,13 @@
                         </div>
                         <h3>Desarrollador .NET</h3>
                         <h4>PENA</h4>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina (Presencial)</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina / Presencial</p>
                         <ul class="experience-list">
-                            <li>Desarrollo y mantenimiento de aplicaciones en C# y VB.NET</li>
-                            <li>Creación de APIs REST y aplicaciones web con ASP.NET</li>
-                            <li>Gestión y optimización de bases de datos SQL Server</li>
-                            <li>Implementación del patrón MVC en aplicaciones empresariales</li>
-                            <li>Optimización de rendimiento en sistemas críticos</li>
+                            <li>Desarrollo y mantenimiento de aplicaciones en C# y VB.NET.</li>
+                            <li>Creacion de APIs REST y aplicaciones web con ASP.NET.</li>
+                            <li>Gestion y optimizacion de bases de datos SQL Server.</li>
+                            <li>Implementacion del patron MVC en aplicaciones empresariales.</li>
+                            <li>Optimizacion de rendimiento en sistemas criticos.</li>
                         </ul>
                         <div class="tech-tags">
                             <span class="tag">C#</span>
@@ -489,9 +491,9 @@
                     </div>
                 </div>
 
-                <div class="experience-item">
+                <div class="experience-item reveal">
                     <div class="experience-date">
-                        <span class="date-badge">2021-2023</span>
+                        <span class="date-badge">2021 / 2023</span>
                         <span class="date-text">Sep 2021 - Dic 2023</span>
                     </div>
                     <div class="experience-content">
@@ -502,14 +504,14 @@
                         <h4>Empresa de Servicios Financieros</h4>
                         <p class="location"><i class="fas fa-map-marker-alt"></i> Remoto</p>
                         <ul class="experience-list">
-                            <li>Gestión de comunicación con clientes y negociación de pagos</li>
-                            <li>Registro y seguimiento de interacciones en sistemas CRM</li>
-                            <li>Toma de decisiones estratégicas para recuperación de deudas</li>
+                            <li>Gestion de comunicacion con clientes y negociacion de pagos.</li>
+                            <li>Registro y seguimiento de interacciones en sistemas CRM.</li>
+                            <li>Toma de decisiones estrategicas para recuperacion de deudas.</li>
                         </ul>
                         <div class="tech-tags">
-                            <span class="tag">Microsoft Office</span>
                             <span class="tag">CRM</span>
-                            <span class="tag">Comunicación</span>
+                            <span class="tag">Comunicacion</span>
+                            <span class="tag">Seguimiento</span>
                         </div>
                     </div>
                 </div>
@@ -517,26 +519,40 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Portfolio</span>
-                <h2 class="section-title">Proyectos Destacados</h2>
+                <span class="section-label">Seleccion</span>
+                <h2 class="section-title">Proyectos donde backend, producto y visual conviven</h2>
+                <p class="section-description">
+                    Elegi proyectos que muestran decision tecnica, criterio de stack
+                    y un rango real entre SaaS, herramientas y productos web.
+                </p>
             </div>
+
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%); display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-hospital" style="font-size: 4rem; color: rgba(255, 255, 255, 0.3);"></i>
+                <article class="project-card reveal">
+                    <div class="project-image project-image-hospital">
+                        <div class="project-mark">
+                            <span>ERP</span>
+                            <small>Healthcare SaaS</small>
+                        </div>
                         <div class="project-overlay">
-                            <a href="https://github.com/MatiasDiGirolamo/erp-hospital" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/MatiasDiGirolamo/erp-hospital" target="_blank" class="project-github"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/MatiasDiGirolamo/erp-hospital" target="_blank" rel="noreferrer" class="project-link" aria-label="Abrir ERP Hospital">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/MatiasDiGirolamo/erp-hospital" target="_blank" rel="noreferrer" class="project-github" aria-label="Ver codigo ERP Hospital">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-content">
                         <span class="project-category">SaaS Healthcare</span>
-                        <h3>ERP Hospital - Plataforma Clínica</h3>
-                        <p>Plataforma SaaS multiempresa orientada a gestión clínica, con frontend moderno, API separada y módulos para pacientes, historias clínicas, pagos, auditoría y branding por institución.</p>
+                        <h3>ERP Hospital</h3>
+                        <p>
+                            Plataforma multiempresa orientada a gestion clinica, con frontend moderno, API separada
+                            y modulos para pacientes, historias clinicas, pagos, auditoria y branding por institucion.
+                        </p>
                         <div class="project-tech">
                             <span>React</span>
                             <span>Node.js</span>
@@ -546,63 +562,93 @@
                             <span>Docker</span>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%); display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-boxes" style="font-size: 4rem; color: rgba(255, 255, 255, 0.3);"></i>
+                <article class="project-card reveal">
+                    <div class="project-image project-image-stock">
+                        <div class="project-mark">
+                            <span>SM</span>
+                            <small>Inventory App</small>
+                        </div>
                         <div class="project-overlay">
-                            <a href="https://inventory-system-mdg.netlify.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/matiasdigirolamo" target="_blank" class="project-github"><i class="fab fa-github"></i></a>
+                            <a href="https://inventory-system-mdg.netlify.app/" target="_blank" rel="noreferrer" class="project-link" aria-label="Abrir StockMaster Pro">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/matiasdigirolamo/stockmaster-pro" target="_blank" rel="noreferrer" class="project-github" aria-label="Ver codigo StockMaster Pro">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-content">
                         <span class="project-category">Inventory Management</span>
-                        <h3>StockMaster Pro - Sistema de Inventario</h3>
-                        <p>Sistema CRUD completo para gestión de inventario con control de stock, alertas automáticas, registro de movimientos (entradas/salidas), gestión de categorías y proveedores. Incluye reportes descargables y persistencia con LocalStorage.</p>
+                        <h3>StockMaster Pro</h3>
+                        <p>
+                            Sistema CRUD para gestion de inventario con control de stock, alertas, movimientos,
+                            categorias, proveedores y reportes listos para uso operativo.
+                        </p>
                         <div class="project-tech">
                             <span>JavaScript</span>
+                            <span>HTML / CSS</span>
                             <span>LocalStorage</span>
                             <span>CRUD</span>
-                            <span>HTML/CSS</span>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%); display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-server" style="font-size: 4rem; color: rgba(255, 255, 255, 0.3);"></i>
+                <article class="project-card reveal">
+                    <div class="project-image project-image-api">
+                        <div class="project-mark">
+                            <span>API</span>
+                            <small>.NET Backend</small>
+                        </div>
                         <div class="project-overlay">
-                            <a href="https://github.com/matiasdigirolamo" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/matiasdigirolamo" target="_blank" class="project-github"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/matiasdigirolamo/stockmaster-api" target="_blank" rel="noreferrer" class="project-link" aria-label="Abrir StockMaster API">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/matiasdigirolamo/stockmaster-api" target="_blank" rel="noreferrer" class="project-github" aria-label="Ver codigo StockMaster API">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-content">
                         <span class="project-category">Backend API</span>
-                        <h3>StockMaster API - Backend .NET</h3>
-                        <p>API REST completa con .NET 9.0, Entity Framework Core y SQL Server. CRUD de Productos, Categorías, Proveedores y Movimientos. Incluye búsqueda, filtrado, alertas de stock bajo y documentación Swagger.</p>
+                        <h3>StockMaster API</h3>
+                        <p>
+                            API REST completa con .NET 9, Entity Framework Core y SQL Server para productos,
+                            categorias, proveedores y movimientos, con documentacion Swagger y OpenAPI.
+                        </p>
                         <div class="project-tech">
-                            <span>.NET 9.0</span>
+                            <span>.NET 9</span>
                             <span>EF Core</span>
                             <span>SQL Server</span>
                             <span>Swagger</span>
                             <span>OpenAPI</span>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%); display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-wallet" style="font-size: 4rem; color: rgba(255, 255, 255, 0.3);"></i>
+                <article class="project-card reveal">
+                    <div class="project-image project-image-finance">
+                        <div class="project-mark">
+                            <span>PWA</span>
+                            <small>Finance Tracker</small>
+                        </div>
                         <div class="project-overlay">
-                            <a href="https://my-finances-tracker.netlify.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/matiasdigirolamo" target="_blank" class="project-github"><i class="fab fa-github"></i></a>
+                            <a href="https://my-finances-tracker.netlify.app/" target="_blank" rel="noreferrer" class="project-link" aria-label="Abrir Finance Tracker">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/matiasdigirolamo/finance-tracker" target="_blank" rel="noreferrer" class="project-github" aria-label="Ver codigo Finance Tracker">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-content">
                         <span class="project-category">PWA + Firebase</span>
-                        <h3>Finance Tracker - Gestor de Gastos</h3>
-                        <p>PWA completa para gestión de finanzas personales con autenticación Google, tarjetas de crédito, suscripciones, conversión de monedas (Dólar Blue), calendario interactivo y sincronización en la nube. Instalable en móvil.</p>
+                        <h3>Finance Tracker</h3>
+                        <p>
+                            PWA para gestion de finanzas personales con autenticacion, tarjetas, suscripciones,
+                            sincronizacion en la nube y experiencia de uso pensada para el dia a dia.
+                        </p>
                         <div class="project-tech">
                             <span>Firebase Auth</span>
                             <span>Firestore</span>
@@ -610,20 +656,30 @@
                             <span>Chart.js</span>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #1d4ed8 0%, #0f172a 100%); display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-gamepad" style="font-size: 4rem; color: rgba(255, 255, 255, 0.3);"></i>
+                <article class="project-card reveal">
+                    <div class="project-image project-image-lol">
+                        <div class="project-mark">
+                            <span>LoL</span>
+                            <small>Riot API Tool</small>
+                        </div>
                         <div class="project-overlay">
-                            <a href="https://github.com/MatiasDiGirolamo/lol-build-advisor" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/MatiasDiGirolamo/lol-build-advisor" target="_blank" class="project-github"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/MatiasDiGirolamo/lol-build-advisor" target="_blank" rel="noreferrer" class="project-link" aria-label="Abrir LoL Build Advisor">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/MatiasDiGirolamo/lol-build-advisor" target="_blank" rel="noreferrer" class="project-github" aria-label="Ver codigo LoL Build Advisor">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-content">
                         <span class="project-category">Gaming Assistant</span>
                         <h3>LoL Build Advisor</h3>
-                        <p>MVP full stack que detecta partidas activas de League of Legends y recomienda ajustes de build usando Riot API, Live Client Data y una capa opcional de IA.</p>
+                        <p>
+                            MVP full stack que detecta partidas activas de League of Legends y recomienda
+                            ajustes de build usando Riot API, Live Client Data y una capa opcional de IA.
+                        </p>
                         <div class="project-tech">
                             <span>React</span>
                             <span>Vite</span>
@@ -633,24 +689,24 @@
                             <span>OpenAI</span>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Hablemos</span>
-                <h2 class="section-title">Contacto</h2>
+                <span class="section-label">Contacto</span>
+                <h2 class="section-title">Si el proyecto importa, me interesa hablarlo</h2>
                 <p class="section-description">
-                    ¿Tienes un proyecto en mente? ¿Quieres colaborar? No dudes en contactarme.
+                    Elegi el canal que prefieras y te respondo por mail, LinkedIn o GitHub.
                 </p>
             </div>
+
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-card">
+                    <div class="contact-card reveal">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
@@ -658,32 +714,51 @@
                         <p>matidigi23@gmail.com</p>
                         <a href="mailto:matidigi23@gmail.com" class="contact-link">Enviar email</a>
                     </div>
-                    <div class="contact-card">
+
+                    <div class="contact-card reveal">
                         <div class="contact-icon">
                             <i class="fab fa-linkedin"></i>
                         </div>
                         <h3>LinkedIn</h3>
                         <p>Conectemos profesionalmente</p>
-                        <a href="https://linkedin.com/in/matiasdigirolamo" target="_blank" class="contact-link">Ver perfil</a>
+                        <a href="https://linkedin.com/in/matiasdigirolamo" target="_blank" rel="noreferrer" class="contact-link">Ver perfil</a>
                     </div>
-                    <div class="contact-card">
+
+                    <div class="contact-card reveal">
                         <div class="contact-icon">
                             <i class="fab fa-github"></i>
                         </div>
                         <h3>GitHub</h3>
-                        <p>Revisa mi código</p>
-                        <a href="https://github.com/matiasdigirolamo" target="_blank" class="contact-link">Ver repositorios</a>
+                        <p>Repos y proyectos reales</p>
+                        <a href="https://github.com/MatiasDiGirolamo" target="_blank" rel="noreferrer" class="contact-link">Ver repositorios</a>
                     </div>
-                    <div class="contact-card">
+
+                    <div class="contact-card reveal">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <h3>Ubicación</h3>
+                        <h3>Ubicacion</h3>
                         <p>Buenos Aires, Argentina</p>
-                        <span class="contact-link">Disponible remoto</span>
+                        <span class="contact-link">UTC-3</span>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
+
+                <div class="contact-form-wrapper reveal">
+                    <div class="contact-quick-links">
+                        <a href="mailto:matidigi23@gmail.com" aria-label="Email">
+                            <span>Email</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/matiasdigirolamo" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                            <span>LinkedIn</span>
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/MatiasDiGirolamo" target="_blank" rel="noreferrer" aria-label="GitHub">
+                            <span>GitHub</span>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
                             <label for="name">Nombre</label>
@@ -697,13 +772,13 @@
                             <label for="subject">Asunto</label>
                             <input type="text" id="subject" name="subject" required>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form-group-full">
                             <label for="message">Mensaje</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">
                             <i class="fas fa-paper-plane"></i>
-                            Enviar Mensaje
+                            Enviar mensaje
                         </button>
                     </form>
                 </div>
@@ -711,22 +786,19 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Matías Di Girolamo. Todos los derechos reservados.</p>
-                <p class="footer-made">Hecho con <i class="fas fa-heart"></i> usando HTML, CSS y JavaScript</p>
+                <p>2026 Matias Di Girolamo. Todos los derechos reservados.</p>
+                <p class="footer-made">Hecho con HTML, CSS y JavaScript, pero con obsesion por los detalles.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scrollTop">
+    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <script src="js/script.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </body>
 </html>
